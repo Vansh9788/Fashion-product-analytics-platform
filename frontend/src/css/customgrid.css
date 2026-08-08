@@ -1,0 +1,140 @@
+.table-container {
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.header-row {
+  background-color: #00A199; /* changed */
+  color: white;
+  font-weight: 600;
+}
+
+/* Apply hover highlight to all headers */
+.custom-table th:hover {
+  background-color: #00897b; /* highlight color */
+}
+
+/* Sortable headers pointer cursor */
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Non-sortable headers default cursor */
+.custom-table th:not(.sortable-header) {
+  cursor: default;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 16px;
+}
+
+.odd-row {
+  background-color: #f5f5f5;
+}
+
+.even-row {
+  background-color: white;
+}
+
+.custom-table tr:hover {
+  background-color: #b2dfdb; /* lighter tint of #00A199 for hover */
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  background-color: #00A199; /* changed */
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #80cbc4;
+  cursor: default;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #007c73;
+}
+
+.no-records {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 12px 16px;
+  gap: 8px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  flex-grow: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search-button {
+  background-color: #00A199;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #007c73;
+}
+
+.sort-icon {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.8em;
+  vertical-align: middle;
+  color: #00A199;
+}
+
+.grid-action-button {
+  background-color: #00A199;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
