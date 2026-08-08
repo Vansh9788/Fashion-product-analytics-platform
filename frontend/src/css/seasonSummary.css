@@ -1,0 +1,75 @@
+.season-summary-card {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  padding: 32px 28px 28px 28px;
+  max-width: 400px;
+  margin: 30px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.season-summary-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.season-summary-select {
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background: #fff;
+  outline: none;
+}
+
+.season-summary-select:focus {
+  border-color: #00A199;
+  box-shadow: 0 0 6px #00A199aa;
+}
+
+.season-summary-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.season-summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 0;
+}
+
+.season-summary-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.season-summary-value {
+  color: #00A199;
+  font-size: 1.09rem;
+  font-weight: 700;
+}
+
+.season-summary-error {
+  color: #d32f2f;
+  padding: 12px;
+  background: #ffe5e5;
+  border-radius: 5px;
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.season-summary-loading {
+  color: #007c73;
+  padding: 12px;
+  background: #e6f8f7;
+  border-radius: 5px;
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
